@@ -1,0 +1,71 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "URL",
+            "name": "category",
+            "kind": "Grouping"
+          },
+          {
+            "displayName": "ASSET CODE",
+            "name": "value",
+            "kind": "Measure"
+          },
+          {
+            "displayName": "TITLE",
+            "name": "thirdColumnMeasure",
+            "kind": "Measure"
+          }
+    ],
+    "objects": {
+      "general": {
+        "displayName": "General",
+        "properties": {
+          "supportsExportData": {
+            "type": {
+              "bool": true
+            }
+          }
+        }
+      }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+              "rows": {
+                "select": [
+                  {
+                    "for": {
+                      "in": "category"
+                    }
+                  },
+                  {
+                    "for": {
+                      "in": "value"
+                    }
+                  },
+                  {
+                    "bind": {
+                      "to": "thirdColumnMeasure"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+    ],
+    "privileges": [
+        {
+        "name": "WebAccess",
+        "essential": true,
+        "parameters": [
+            "https://test.deloweb.fr"]
+
+      }, 
+      {
+        "name": "ExportContent",
+        "essential": true,
+        "parameters": ["pdf"]
+    }
+
+]
+}

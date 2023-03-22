@@ -1,0 +1,26 @@
+{
+    "visual": {
+        "name": "imgExport",
+        "displayName": "imgExport",
+        "guid": "imgExport26666D9018F9432C93B48C63A283ABC9",
+        "visualClassName": "Visual",
+        "version": "1.0.1",
+        "description": "export image",
+        "supportUrl": "maxime.delobelle@gmail.com",
+        "gitHubUrl": "maxime.delobelle@gmail.com",
+        "exportEnabled": true
+    },
+    "apiVersion": "5.1.0",
+    "author": {
+        "name": "maxime.delobelle@gmail.com",
+        "email": "maxime.delobelle@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}

@@ -1,0 +1,37 @@
+
+#container{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.row{
+    overflow: hidden; /* hide any overflow */
+    position: relative; /* make sure the div is positioned relatively */
+}
+
+.row img {
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width of the image to the full width of the container */
+    height: 100%; /* Set the height of the image to the full height of the container */
+    // object-fit: contain; 
+    // object-position: center; /* Center the image within the container */
+
+  }
+
+  .title {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    color: #131b4d;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 800;
+
+}
